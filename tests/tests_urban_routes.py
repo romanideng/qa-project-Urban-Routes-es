@@ -51,7 +51,7 @@ class TestUrbanRoutes:
         self.routes_page.step_select_comfort()
         self.routes_page.step_click_blanket_switch()
 
-        assert self.routes_page.get_blanket_switch_assert() is True
+        assert self.routes_page.get_blanket_switch_assert()
 
     def test_7_add_ice_cream(self):
         self.routes_page.step_select_comfort()
@@ -85,5 +85,5 @@ class TestUrbanRoutes:
         assert 'El conductor llegará en' in driver_text
 
 
-    def teardown_method(self):
-        self.driver.quit()
+   # def teardown_method(self):
+       # self.driver.quit()

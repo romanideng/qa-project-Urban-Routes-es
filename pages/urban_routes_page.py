@@ -31,7 +31,7 @@ class UrbanRoutesPage:
     payment_assert = card_payment_assert = (By.CSS_SELECTOR, '.pp-value-text')
     comment_for_driver = (By.ID, 'comment')
     blanket_switch = (By.CSS_SELECTOR, '.switch .slider.round')
-    blanket_switch_assert = (By.CSS_SELECTOR, '.switch-input')
+    blanket_switch_assert = (By.CLASS_NAME, 'switch-input')
     ice_cream_plus_button = (By.XPATH, '//div[text()="Helado"]/..//div[@class="counter-plus"]')
     ice_cream_count = (By.XPATH, '//div[text()="Helado"]/..//div[@class="counter-value"]')
     request_smart_button = (By.CSS_SELECTOR, '.smart-button')
@@ -219,7 +219,7 @@ class UrbanRoutesPage:
     def get_blanket_switch_assert(self):
         return self.wait.until(
             EC.presence_of_element_located(self.blanket_switch_assert)
-        ).is_selected()
+        ).get_property('checked')
 
 
 #7

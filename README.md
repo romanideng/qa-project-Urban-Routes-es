@@ -3,11 +3,11 @@
 
 # Tecnologías utilizadas
 ## - Lenguaje Python mediante Pycharm
-## - Selenium WebDriver para la automatización de la aplicación web
-## - Pytest para las pruebas automatizadas
+## - Selenium WebDriver para la automatización de la aplicación web. <br>Se instala ejecutando el comando "pip install selenium" en la Terminal de Pycharm
+## - Pytest para las pruebas automatizadas. <br> Se instala ejecutando el comando "pip install pytest" en la Terminal de Pycharm
 
 
- En el proyecto se realizaron un total de 9 pruebas solicitadas para la función de pedir un viaje en la aplicación de Urban Routes. <br> El resultado de todas las pruebas fueron exitosas. <br>
+ En el proyecto se realizaron un total de 9 pruebas solicitadas para la función de pedir un viaje en la aplicación de Urban Routes. <br> El resultado de todas las pruebas fueron "status = passed". <br>
  El código proporcionado al inicio no funcionaba para la realización de este proyecto, por lo que se corrigieron los métodos que se intentaban utilizar, con métodos actualizados para Selenium. <br> Como segundo paso solo confirmé que una vez corregidos los métodos, el código ya funcionaba y realizaba la primera prueba exitósamente. <br> Aún así para una optimización y mejor organización realicé una estructura Page Object Model, por lo que se organizaron las líneas de código en diferentes packages y archivos.py. En donde:
 
 ### data: contiene el archivo con las constantes que vamos a utilizar para llenar la información que la página solicita
