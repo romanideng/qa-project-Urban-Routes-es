@@ -85,5 +85,5 @@ class TestUrbanRoutes:
         assert 'El conductor llegará en' in driver_text
 
 
-   # def teardown_method(self):
-       # self.driver.quit()
+    def teardown_method(self):
+        self.driver.quit()
